@@ -15,7 +15,7 @@ This project is currently in a very early alpha draft.
 
 # Frontend
 
-http://blue-prawn.github.io/opam-install-report/report.html
+http://blue-prawn.github.io/opam-install-report/opam-report.html
 
 
 # License

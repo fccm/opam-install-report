@@ -1,0 +1,5 @@
+ocamlbuild -use-ocamlfind -package yojson -package zip -package str -package num -lib datalog -I src -cflags -I,src -lflags -I,src -pp 'sed -e "s/ZIPPERPOSITION_VERSION/0.2/g" -e "s+ZIPPERPOSITION_HOME+/home/blue_prawn/.zipperposition/+g"' -tag debug src/zipperposition.native
+/usr/bin/ocamlfind ocamldep -package datalog -package yojson -package zip -package num -package str -pp 'sed -e "s/ZIPPERPOSITION_VERSION/0.2/g" -e "s+ZIPPERPOSITION_HOME+/home/blue_prawn/.zipperposition/+g"' -modules src/zipperposition.ml > src/zipperposition.ml.depends
++ /usr/bin/ocamlfind ocamldep -package datalog -package yojson -package zip -package num -package str -pp 'sed -e "s/ZIPPERPOSITION_VERSION/0.2/g" -e "s+ZIPPERPOSITION_HOME+/home/blue_prawn/.zipperposition/+g"' -modules src/zipperposition.ml > src/zipperposition.ml.depends
+ocamlfind: Package `datalog' not found
+Command exited with code 2.

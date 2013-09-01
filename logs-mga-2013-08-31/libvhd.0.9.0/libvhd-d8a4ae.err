@@ -1,0 +1,2 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' lib/liblibvhd_stubs.a lib/dlllibvhd_stubs.so lib/libvhd.cma lib/libvhd.cmxa lib/libvhd.a lib/libvhd.cmxs lib_test/open.byte -tag debug' terminated with error code 10")
+make: *** [build] Erreur 1

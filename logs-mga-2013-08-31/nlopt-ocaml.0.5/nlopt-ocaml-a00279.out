@@ -1,0 +1,6 @@
+/usr/bin/ocamlopt.opt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt '-std=c99' -ccopt -O3 -ccopt -Wall -c src/nlopt_wrapper.c
++ ocamlfind ocamlc -ccopt '-std=c99' -ccopt -O3 -ccopt -Wall -c src/nlopt_wrapper.c
+src/nlopt_wrapper.c:3:19: erreur fatale: nlopt.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+Command exited with code 2.

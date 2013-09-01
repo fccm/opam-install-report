@@ -1,0 +1,1 @@
+E: Failure("Command '/usr/bin/ocamlbuild src/libsnappy_stubs.a src/dllsnappy_stubs.so src/snappy.cma src/snappy.cmxs src/snappy.cmxa src/snappy.a test.native -tag debug' terminated with error code 10")

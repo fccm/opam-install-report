@@ -1,0 +1,12 @@
+*** omake: reading OMakefiles
+--- Checking for ocamlfind... (found /mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind)
+--- Checking for ocamlc.opt... (found /usr/bin/ocamlc.opt)
+--- Checking for ocamlopt.opt... (found /usr/bin/ocamlopt.opt)
+--- Checking whether ocamlc understands the "z" warnings... (yes)
+*** omake: finished reading OMakefiles (0.04 sec)
+--- Checking if ocamldep understands -modules... (yes)
+- scan _build/src/lib scan-ocaml-CFStream_stream.ml
++ ocamlfind ocamldep -package core -modules CFStream_stream.ml
+     | Shell.ocamldep-postproc()
+*** omake: 15/43 targets are up to date
+*** omake: failed (0.05 sec, 1/1 scans, 0/0 rules, 13/62 digests)

@@ -1,0 +1,22 @@
+warning: obuild META search paths and ocaml config mismatch
+
+  The ocamlfind configuration file used doesn't list the ocaml standard library 
+  as part of his search paths. something fishy is going on
+  You can solve the issue by:
+  * pointing OCAMLFIND_CONF environment to the right configuration file
+  * making sure that the ocamlfind program in your path is the right one (ocamlfind printconf)
+
+  this is likely to cause various compilation problems
+warning: obuild META search paths and ocaml config mismatch
+
+  The ocamlfind configuration file used doesn't list the ocaml standard library 
+  as part of his search paths. something fishy is going on
+  You can solve the issue by:
+  * pointing OCAMLFIND_CONF environment to the right configuration file
+  * making sure that the ocamlfind program in your path is the right one (ocamlfind printconf)
+
+  this is likely to cause various compilation problems
+
+File "lib_test/messages.ml", line 24, characters 47-57:
+Error: Integer literal exceeds the range of representable integers of type int
+make: *** [build] Erreur 8

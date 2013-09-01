@@ -1,0 +1,5 @@
+*** omake: warning: stdout is not a tty, disabling the progress bar
+   (use --progress to override).
+Fatal error: exception Invalid_argument("String.create")
+*** omake: targets were not rebuilt because of errors:
+   _build/test/io_test.run

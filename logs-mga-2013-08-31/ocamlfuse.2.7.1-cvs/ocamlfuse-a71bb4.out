@@ -1,0 +1,17 @@
+make : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »
+camlidl -header  \
+			 Fuse_bindings.idl
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »
+making ._ncdi/Fuse_bindings.di from Fuse_bindings.mli
+making ._d/Fuse_bindings.d from Fuse_bindings.ml
+making ._d/Fuse.d from Fuse.ml
+making ._d/Fuse_lib.d from Fuse_lib.ml
+making ._d/Unix_util.d from Unix_util.ml
+making ._d/Result.d from Result.ml
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »
+ocamlc -c -cc "cc" -ccopt "-fPIC -D_FILE_OFFSET_BITS=64 -I. -pthread \
+			-DPIC -DNATIVE_CODE   \
+			  -I/mnt/ramdisk/opam-report/.opam/system/lib/camlidl  -o Fuse_bindings_stubs.o " Fuse_bindings_stubs.c 
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »
+make: on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocamlfuse.2.7.1-cvs/lib »

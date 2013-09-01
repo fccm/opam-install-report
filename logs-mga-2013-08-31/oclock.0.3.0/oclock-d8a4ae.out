@@ -1,0 +1,4 @@
+ocamldep  *.ml *.mli > .depend
+ocamlc  -c oclock.mli
+ocamlc  -c oclock.ml
+cc -fPIC   -c -o oclock_stubs.o oclock_stubs.c

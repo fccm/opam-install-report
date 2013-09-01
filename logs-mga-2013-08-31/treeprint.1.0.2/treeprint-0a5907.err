@@ -1,0 +1,11 @@
+File OMyMakefile: line 188, characters 3-26:
+   Warning: old-style foreach expression.
+   This expression should use a => binding.
+File OMyMakefile: line 669, characters 2-21:
+   Warning: old-style foreach expression.
+   This expression should use a => binding.
+ocamlfind: Package `ocaml_conv' not found
+*** omake: targets were not rebuilt because of errors:
+   <scanner lib/scan-ocaml-printer.mli>
+      depends on: lib/printer.mli
+E: Failure("Command 'cp OMakeroot.in OMakeroot; PREFIX=/mnt/ramdisk/opam-report/.opam/system omake' terminated with error code 2")

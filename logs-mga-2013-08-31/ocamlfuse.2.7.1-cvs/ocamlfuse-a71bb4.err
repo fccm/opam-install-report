@@ -1,0 +1,5 @@
+In file included from Fuse_bindings_stubs.c:17:0:
+Fuse_bindings.h:16:18: erreur fatale: fuse.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+make[1]: *** [Fuse_bindings_stubs.o] Erreur 2
+make: *** [native-code-library] Erreur 2

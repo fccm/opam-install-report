@@ -1,0 +1,5 @@
+glpk_stubs.c:34:18: erreur fatale: glpk.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+make[2]: *** [glpk_stubs.o] Erreur 2
+make[1]: *** [byte-code-library] Erreur 2
+make: *** [byte] Erreur 2

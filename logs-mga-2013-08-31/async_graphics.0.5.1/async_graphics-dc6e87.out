@@ -1,0 +1,5 @@
+/usr/bin/ocamlfind ocamldep -package graphics -package async -modules async_graphics.mli > async_graphics.mli.depends
+/usr/bin/ocamlfind ocamlc -c -thread -package graphics -package async -o async_graphics.cmi async_graphics.mli
++ /usr/bin/ocamlfind ocamlc -c -thread -package graphics -package async -o async_graphics.cmi async_graphics.mli
+ocamlfind: Package `core' not found - required by `async_core'
+Command exited with code 2.

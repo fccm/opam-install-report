@@ -1,0 +1,168 @@
+./configure
+Generating Makefile.config
+Makefile.config generated
+make -C js_of_ocaml
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml »
+make -C compiler
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/compiler »
+ocamlfind ocamlc -package findlib,str -c pretty_print.mli
+ocamlfind ocamlopt -package findlib,str -c pretty_print.ml
+ocamlfind ocamlc -package findlib,str -c util.mli
+ocamlfind ocamlopt -package findlib,str -c util.ml
+ocamlfind ocamlc -package findlib,str -c dgraph.mli
+ocamlfind ocamlopt -package findlib,str -c dgraph.ml
+ocamlfind ocamlc -package findlib,str -c javascript.mli
+ocamlfind ocamlopt -package findlib,str -c javascript.ml
+ocamlfind ocamlc -package findlib,str -c code.mli
+ocamlfind ocamlc -package findlib,str -c js_parse.mli
+ocamlfind ocamlc -package findlib,str -c js_output.mli
+ocamlfind ocamlopt -package findlib,str -c js_output.ml
+ocamlfind ocamlc -package findlib,str -c js_simpl.mli
+ocamlfind ocamlopt -package findlib,str -c js_simpl.ml
+ocamlfind ocamlc -package findlib,str -c instr.mli
+ocamlfind ocamlopt -package findlib,str -c instr.ml
+ocamlfind ocamlopt -package findlib,str -c code.ml
+ocamlfind ocamlc -package findlib,str -c primitives.mli
+ocamlfind ocamlopt -package findlib,str -c primitives.ml
+ocamlfind ocamlc -package findlib,str -c varsubst.mli
+ocamlfind ocamlopt -package findlib,str -c varsubst.ml
+ocamlfind ocamlc -package findlib,str -c pure_fun.mli
+ocamlfind ocamlopt -package findlib,str -c pure_fun.ml
+ocamlfind ocamlc -package findlib,str -c deadcode.mli
+ocamlfind ocamlopt -package findlib,str -c deadcode.ml
+ocamlfind ocamlc -package findlib,str -c flow.mli
+ocamlfind ocamlopt -package findlib,str -c flow.ml
+ocamlfind ocamlc -package findlib,str -c inline.mli
+ocamlfind ocamlopt -package findlib,str -c inline.ml
+ocamlfind ocamlc -package findlib,str -c tailcall.mli
+ocamlfind ocamlopt -package findlib,str -c tailcall.ml
+ocamlfind ocamlc -package findlib,str -c freevars.mli
+ocamlfind ocamlopt -package findlib,str -c freevars.ml
+ocamlfind ocamlc -package findlib,str -c phisimpl.mli
+ocamlfind ocamlopt -package findlib,str -c phisimpl.ml
+ocamlfind ocamlc -package findlib,str -c linker.mli
+ocamlfind ocamlopt -package findlib,str -c linker.ml
+ocamlfind ocamlc -package findlib,str -c generate.mli
+ocamlfind ocamlopt -package findlib,str -c generate.ml
+ocamlfind ocamlopt -package findlib,str -c js_parse.ml
+ocamlfind ocamlc -package findlib,str -c driver.mli
+ocamlfind ocamlopt -package findlib,str -c driver.ml
+ocamlfind ocamlopt -package findlib,str -c main.ml
+ocamlfind ocamlopt -package findlib,str,unix -linkpkg -o compile.opt pretty_print.cmx util.cmx dgraph.cmx javascript.cmx js_output.cmx js_simpl.cmx instr.cmx code.cmx primitives.cmx varsubst.cmx pure_fun.cmx deadcode.cmx flow.cmx inline.cmx tailcall.cmx freevars.cmx phisimpl.cmx linker.cmx generate.cmx js_parse.cmx driver.cmx main.cmx
+mv -f compile.opt js_of_ocaml
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/compiler »
+make -C lib
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/lib »
+ocamlfind ocamlc -package camlp4.extend,camlp4.quotations -syntax camlp4o -c syntax/pa_js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c js.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c dom.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c typed_array.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g typed_array.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c file.mli
+ocamlfind ocamlc -package lwt -I deriving_json -c dom_html.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom_html.ml
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g file.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c dom_events.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom_events.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c lwt_js.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g lwt_js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c firebug.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g firebug.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c regexp.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g regexp.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c CSS.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g CSS.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c url.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g url.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c form.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g form.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c xmlHttpRequest.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g xmlHttpRequest.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c event_arrows.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g event_arrows.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c lwt_js_events.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g lwt_js_events.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c json.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g json.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c webGL.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g webGL.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c webSockets.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g webSockets.ml
+(echo "#include <stdlib.h>"; \
+ echo "#include <stdio.h>"; \
+ echo "#define D(f) void f () { fprintf(stderr, \"Unimplemented Javascript primitive %s!\\\\n\", #f); exit(1); }"; \
+ (sed -n -e 's/.*external.*"\([^"%]*\)".*/D(\1)/p' js.ml dom.ml typed_array.ml dom_html.ml file.ml dom_events.ml lwt_js.ml firebug.ml regexp.ml CSS.ml url.ml form.ml xmlHttpRequest.ml event_arrows.ml lwt_js_events.ml json.ml webGL.ml webSockets.ml | \
+  sort | uniq)) \
+        > stubs.c
+ocamlfind ocamlc -package lwt -c stubs.c
+ocamlmklib -o js_of_ocaml js.cmo dom.cmo typed_array.cmo dom_html.cmo file.cmo dom_events.cmo lwt_js.cmo firebug.cmo regexp.cmo CSS.cmo url.cmo form.cmo xmlHttpRequest.cmo event_arrows.cmo lwt_js_events.cmo json.cmo webGL.cmo webSockets.cmo stubs.o
+ocamlfind ocamlc -package deriving-ocsigen.syntax,camlp4.quotations.o -syntax camlp4o -c syntax/pa_deriving_Json.ml
+ocamllex deriving_json/deriving_Json_lexer.mll
+147 states, 749 transitions, table size 3878 bytes
+ocamlfind ocamlc -package lwt -I deriving_json -c deriving_json/deriving_Json_lexer.mli
+ocamlfind ocamlc -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json_lexer.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c deriving_json/deriving_Json.mli
+ocamlfind ocamlc -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json.ml
+ocamlfind ocamlc -a -o deriving_json.cma deriving_json/deriving_Json_lexer.cmo deriving_json/deriving_Json.cmo
+ocamlfind ocamlopt -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json_lexer.ml
+ocamlfind ocamlopt -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json.ml
+ocamlfind ocamlopt -a -o deriving_json.cmxa deriving_json/deriving_Json_lexer.cmx deriving_json/deriving_Json.cmx
+ocamlfind ocamlopt -shared -linkall -o deriving_json.cmxs deriving_json.cmxa
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/lib »
+make -C runtime
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/runtime »
+cat mlString.js ieee_754.js int64.js md5.js marshall.js lexing.js parsing.js json.js stdlib.js jslib.js jslib_js_of_ocaml.js > runtime.js
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/runtime »
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml »
+make -C js_of_ocaml/compiler compiler.cma
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/compiler »
+ocamlfind ocamlc -package findlib,str -c pretty_print.ml
+ocamlfind ocamlc -package findlib,str -c util.ml
+ocamlfind ocamlc -package findlib,str -c dgraph.ml
+ocamlfind ocamlc -package findlib,str -c javascript.ml
+ocamlfind ocamlc -package findlib,str -c js_output.ml
+ocamlfind ocamlc -package findlib,str -c js_simpl.ml
+ocamlfind ocamlc -package findlib,str -c instr.ml
+ocamlfind ocamlc -package findlib,str -c code.ml
+ocamlfind ocamlc -package findlib,str -c primitives.ml
+ocamlfind ocamlc -package findlib,str -c varsubst.ml
+ocamlfind ocamlc -package findlib,str -c pure_fun.ml
+ocamlfind ocamlc -package findlib,str -c deadcode.ml
+ocamlfind ocamlc -package findlib,str -c flow.ml
+ocamlfind ocamlc -package findlib,str -c inline.ml
+ocamlfind ocamlc -package findlib,str -c tailcall.ml
+ocamlfind ocamlc -package findlib,str -c freevars.ml
+ocamlfind ocamlc -package findlib,str -c phisimpl.ml
+ocamlfind ocamlc -package findlib,str -c linker.ml
+ocamlfind ocamlc -package findlib,str -c generate.ml
+ocamlfind ocamlc -package findlib,str -c js_parse.ml
+ocamlfind ocamlc -package findlib,str -c driver.ml
+ocamlfind ocamlc -a -o compiler.cma pretty_print.cmo util.cmo dgraph.cmo javascript.cmo js_output.cmo js_simpl.cmo instr.cmo code.cmo primitives.cmo varsubst.cmo pure_fun.cmo deadcode.cmo flow.cmo inline.cmo tailcall.cmo freevars.cmo phisimpl.cmo linker.cmo generate.cmo js_parse.cmo driver.cmo
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/js_of_ocaml/compiler »
+make -C cmicomp
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/cmicomp »
+cp -f ../js_of_ocaml/lib/*.cmi .
+cp -f ../js_of_ocaml/lib/js_of_ocaml.cma .
+ocamlrun ../toplevellib-4.00.1/cmicomp compress CSS.cmi		event_arrows.cmi  js.cmi      typed_array.cmi dom.cmi		file.cmi	  json.cmi    url.cmi dom_events.cmi	firebug.cmi	  lwt_js.cmi  webGL.cmi dom_html.cmi	form.cmi	  regexp.cmi  xmlHttpRequest.cmi
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/cmicomp »
+make -C ocp-jslib
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/ocp-jslib »
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c utils.mli
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c button.mli
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c cookie.mli
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c dragnDrop.mli
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c graphics.mli
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c utils.ml
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c button.ml
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c cookie.ml
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c dragnDrop.ml
+ocamlfind ocamlc -package lwt,str  -pp "camlp4o ../js_of_ocaml/lib/syntax/pa_js.cmo" -I ../js_of_ocaml/lib -c graphics.ml
+ocamlc -a -o ocp-jslib.cma utils.cmo button.cmo cookie.cmo dragnDrop.cmo graphics.cmo
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/ocp-jslib »
+make -C ocaml-num
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/ocaml-num »
+ocamlc -g -c int_misc.mli nat.mli big_int.mli arith_flags.mli ratio.mli num.mli arith_status.mli
+ocamlc -g -a -o ocaml-num.cma int_misc.ml nat.ml big_int.ml arith_flags.ml ratio.ml num.ml arith_status.ml topnum.ml
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/tryocaml.0.2.2/ocaml-num »

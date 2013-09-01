@@ -1,0 +1,1 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' src/libZMQB_stubs.a src/dllZMQB_stubs.so src/ZMQB.cma src/ZMQB.cmxa src/ZMQB.a src/ZMQB.cmxs test/test.native -tag debug' terminated with error code 10")

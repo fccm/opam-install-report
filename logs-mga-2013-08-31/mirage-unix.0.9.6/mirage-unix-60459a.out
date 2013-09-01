@@ -1,0 +1,6 @@
+make OS=unix PREFIX=/mnt/ramdisk/opam-report/.opam/system uninstall
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/mirage-unix.0.9.6 »
+cd unix && make uninstall
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/mirage-unix.0.9.6/unix »
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/mirage-unix.0.9.6/unix »
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/mirage-unix.0.9.6 »

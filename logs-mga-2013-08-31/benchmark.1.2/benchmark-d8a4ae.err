@@ -1,0 +1,4 @@
+ocamlfind: Package `pcre' not found
+W: Field 'pkg_pcre' is not set: Command ''/mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind' query -format %d pcre > '/tmp/oasis-e40564.txt'' terminated with error code 2
+E: Cannot find findlib package pcre
+E: Failure("1 configuration error")

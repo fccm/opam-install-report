@@ -1,0 +1,12 @@
+*** omake: reading OMakefiles
+--- Checking for ocamlfind... (found /mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind)
+--- Checking for ocamlc.opt... (found /usr/bin/ocamlc.opt)
+--- Checking for ocamlopt.opt... (found /usr/bin/ocamlopt.opt)
+--- Checking whether ocamlc understands the "z" warnings... (yes)
+*** omake: finished reading OMakefiles (0.04 sec)
+--- Checking if ocamldep understands -modules... (yes)
+- scan lib scan-ocaml-printer.mli
++ ocamlfind ocamldep -package spotlib,ocaml_conv -syntax camlp4o -package meta_conv.syntax -modules printer.mli
+     | Shell.ocamldep-postproc()
+*** omake: 16/40 targets are up to date
+*** omake: failed (0.05 sec, 1/1 scans, 0/0 rules, 11/79 digests)

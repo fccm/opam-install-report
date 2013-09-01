@@ -1,0 +1,12 @@
+make -C src byte
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »
+making ._bcdi/glpk.di from glpk.mli
+making ._d/glpk.d from glpk.ml
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »
+ocamlc -c -cc "cc" -ccopt "-fPIC -Wall -ansi -DCAML_NAME_SPACE -g \
+			-DPIC   \
+			    -o glpk_stubs.o " glpk_stubs.c 
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/ocaml-glpk.0.1.6/src »

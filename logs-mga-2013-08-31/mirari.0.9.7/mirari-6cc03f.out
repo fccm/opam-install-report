@@ -1,0 +1,8 @@
+rm -rf _build
+mkdir -p _build/lib
+echo let project_version=\"0.9.6\" > lib/path_generated.ml
+ocamlbuild -use-ocamlfind -pkg cmdliner -pkg unix -pkg tuntap -pkg fd-send-recv lib/main.native
+/usr/bin/ocamlfind ocamldep -package fd-send-recv -package tuntap -package unix -package cmdliner -modules lib/main.ml > lib/main.ml.depends
++ /usr/bin/ocamlfind ocamldep -package fd-send-recv -package tuntap -package unix -package cmdliner -modules lib/main.ml > lib/main.ml.depends
+ocamlfind: Package `fd-send-recv' not found
+Command exited with code 2.

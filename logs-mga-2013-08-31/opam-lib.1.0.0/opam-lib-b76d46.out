@@ -1,0 +1,28 @@
+./shell/get-git-id.sh > src/core/opamGitVersion.ml
+ocaml shell/crunch.ml "complete"     < shell/opam_completion.sh > src/core/opamScript.ml
+ocaml shell/crunch.ml "complete_zsh" < shell/opam_completion_zsh.sh >> src/core/opamScript.ml
+ocaml shell/crunch.ml "switch_eval"  < shell/opam_switch_eval.sh >> src/core/opamScript.ml
+Compiling opam-core
+/usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/core/opamScript.ml > src/core/opamScript.ml.depends
++ /usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/core/opamScript.ml > src/core/opamScript.ml.depends
+ocamlfind: Package `dose3' not found
+Command exited with code 2.
+Compiling opam-repositories
+/usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/repositories/opamLocal.mli > src/repositories/opamLocal.mli.depends
++ /usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/repositories/opamLocal.mli > src/repositories/opamLocal.mli.depends
+ocamlfind: Package `dose3' not found
+Command exited with code 2.
+Compiling opam-solver
+/usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/solver/opamHeuristic.mli > src/solver/opamHeuristic.mli.depends
++ /usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/solver/opamHeuristic.mli > src/solver/opamHeuristic.mli.depends
+ocamlfind: Package `dose3' not found
+Command exited with code 2.
+Compiling opam-client
+/usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/client/opamConfigCommand.mli > src/client/opamConfigCommand.mli.depends
++ /usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/client/opamConfigCommand.mli > src/client/opamConfigCommand.mli.depends
+ocamlfind: Package `dose3' not found
+Command exited with code 2.
+/usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/client/opamMain.ml > src/client/opamMain.ml.depends
++ /usr/bin/ocamlfind ocamldep -package dose3 -package cudf -package cmdliner -package ocamlgraph -package re.perl -package re.pcre -package re.glob -modules src/client/opamMain.ml > src/client/opamMain.ml.depends
+ocamlfind: Package `dose3' not found
+Command exited with code 2.

@@ -1,0 +1,26 @@
+I: Running command '/usr/bin/ocamlbuild src/liblbfgs.a src/dlllbfgs.so src/lbfgs.cma src/lbfgs.cmxa src/lbfgs.a examples//error.native -tag debug'
+/usr/bin/ocamlopt.opt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/share/colorgcc/gfortran -c -o src/Lbfgsb.3.0/lbfgsb.o -fPIC -O3 src/Lbfgsb.3.0/lbfgsb.f
+/usr/share/colorgcc/gfortran -c -o src/Lbfgsb.3.0/linpack.o -fPIC -O3 src/Lbfgsb.3.0/linpack.f
+/usr/share/colorgcc/gfortran -c -o src/Lbfgsb.3.0/blas.o -fPIC -O3 src/Lbfgsb.3.0/blas.f
+/usr/share/colorgcc/gfortran -c -o src/Lbfgsb.3.0/timer.o -fPIC -O3 src/Lbfgsb.3.0/timer.f
+ocamlfind ocamlc -c src/lbfgs_stubs.c
+mv lbfgs_stubs.o src/lbfgs_stubs.o
+/usr/bin/ocamlmklib -o src/lbfgs src/Lbfgsb.3.0/timer.o src/Lbfgsb.3.0/blas.o src/Lbfgsb.3.0/linpack.o src/Lbfgsb.3.0/lbfgsb.o -cclib -lgfortran src/lbfgs_stubs.o
+ocamlfind ocamldep -package bigarray -modules src/lbfgs.mli > src/lbfgs.mli.depends
+ocamlfind ocamlc -c -g -package bigarray -I src -o src/lbfgs.cmi src/lbfgs.mli
+ocamlfind ocamldep -package camlp4.macro -package bigarray -syntax camlp4o -modules src/lbfgs.ml > src/lbfgs.ml.depends
+ocamlfind ocamlc -c -g -annot -package camlp4.macro -package bigarray -syntax camlp4o -I src -o src/lbfgs.cmo src/lbfgs.ml
+ocamlfind ocamlc -a -dllib -llbfgs -cclib -llbfgs -cclib -lgfortran src/lbfgs.cmo -o src/lbfgs.cma
+ocamlfind ocamlopt -c -g -annot -package camlp4.macro -package bigarray -syntax camlp4o -inline 10 -I src -o src/lbfgs.cmx src/lbfgs.ml
+ocamlfind ocamlopt -a -cclib -llbfgs -cclib -lgfortran src/lbfgs.cmx -o src/lbfgs.cmxa
+ocamlfind ocamldep -package bigarray -modules examples/error.ml > examples/error.ml.depends
+ocamlfind ocamlc -c -g -annot -I src -package bigarray -I examples -I src -o examples/error.cmo examples/error.ml
+ocamlfind ocamlopt -c -g -annot -I src -package bigarray -inline 10 -I examples -I src -o examples/error.cmx examples/error.ml
+ocamlfind ocamlopt -g -I src -linkpkg -package bigarray src/lbfgs.cmxa examples/error.cmx -o examples/error.native
+I: Running command 'cp '_build/examples//error.native' '_build/examples//error''
+I: Running command '/usr/bin/ocamlbuild examples//Rosenbrock.native -tag debug'
+ocamlfind ocamldep -package bigarray -modules examples/Rosenbrock.ml > examples/Rosenbrock.ml.depends
+ocamlfind ocamlc -c -g -annot -I src -package bigarray -I examples -I src -o examples/Rosenbrock.cmo examples/Rosenbrock.ml
+ocamlfind ocamlopt -c -g -annot -I src -package bigarray -inline 10 -I examples -I src -o examples/Rosenbrock.cmx examples/Rosenbrock.ml
+ocamlfind ocamlopt -g -I src -linkpkg -package bigarray src/lbfgs.cmxa examples/Rosenbrock.cmx -o examples/Rosenbrock.native

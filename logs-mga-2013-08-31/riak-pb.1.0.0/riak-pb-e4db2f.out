@@ -1,0 +1,4 @@
+ocaml setup.ml -build 
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/riak-pb.1.0.0 »
+piqi of-proto -I ./pb/ ./pb/riak.proto -o ./riak.proto.piqi
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/riak-pb.1.0.0 »

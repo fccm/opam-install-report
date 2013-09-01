@@ -1,0 +1,5 @@
+ocamlbuild -use-ocamlfind src/ackdo.native
+/usr/bin/ocamlfind ocamldep -package core,sexplib,sexplib.syntax,str,kaputt,textutils -syntax camlp4o -modules src/ackdo.ml > src/ackdo.ml.depends
++ /usr/bin/ocamlfind ocamldep -package core,sexplib,sexplib.syntax,str,kaputt,textutils -syntax camlp4o -modules src/ackdo.ml > src/ackdo.ml.depends
+ocamlfind: Package `core' not found
+Command exited with code 2.

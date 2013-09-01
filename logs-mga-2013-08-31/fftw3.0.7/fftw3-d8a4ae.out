@@ -1,0 +1,24 @@
+configuring fftw3-ocaml 0.7
+checking for ocaml... /usr/bin/ocaml
+checking for ocamlc... /usr/bin/ocamlc
+ocaml version is 4.00.1
+ocaml library path is /usr/lib/ocaml
+checking for ocamlopt... /usr/bin/ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... /usr/bin/ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... /usr/bin/ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... /usr/bin/ocamldep
+checking for ocamldoc... /usr/bin/ocamldoc
+checking for ocamlfind... /mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for libfftw3 (double precision)... 

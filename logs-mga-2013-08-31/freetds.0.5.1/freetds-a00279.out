@@ -1,0 +1,12 @@
+make -C src byte
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/freetds.0.5.1/src »
+Building .depend.ocaml ... 
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/freetds.0.5.1/src »
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/freetds.0.5.1/src »
+ocamlc.opt  -dtypes -g   -c ct.mli
+ocamlc.opt  -dtypes -g   -c ct.ml
+ocamlc.opt  -dtypes -g   -c dblib.mli
+ocamlc.opt  -dtypes -g   -c dblib.ml
+ocamlc.opt -pack -o freetds.cmo ct.cmo dblib.cmo
+cc -Wall -fPIC -DOCAML_WORD_SIZE=32 -I'/usr/lib/ocaml'   -c -o ct_c.o ct_c.c
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/freetds.0.5.1/src »

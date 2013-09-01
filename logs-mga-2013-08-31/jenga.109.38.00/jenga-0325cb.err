@@ -1,0 +1,2 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' lib/jenga_lib.cma lib/jenga_lib.cmxa lib/jenga_lib.a lib/jenga_lib.cmxs bin/libjenga_archive_stubs.a bin/dlljenga_archive_stubs.so bin/jenga_archive.cma bin/jenga_archive.cmxa bin/jenga_archive.a bin/jenga_archive.cmxs bin/jenga.native bin/jenga_offline.native bin/jem.native -tag debug' terminated with error code 10")
+make: *** [build] Erreur 1

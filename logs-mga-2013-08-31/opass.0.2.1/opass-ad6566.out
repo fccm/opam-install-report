@@ -1,0 +1,4 @@
+/usr/bin/ocamlfind ocamldep -package str,core,core_extended,sexplib.syntax,bin_prot.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -syntax camlp4o -modules bin/main.ml > bin/main.ml.depends
++ /usr/bin/ocamlfind ocamldep -package str,core,core_extended,sexplib.syntax,bin_prot.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -syntax camlp4o -modules bin/main.ml > bin/main.ml.depends
+ocamlfind: Package `core' not found
+Command exited with code 2.

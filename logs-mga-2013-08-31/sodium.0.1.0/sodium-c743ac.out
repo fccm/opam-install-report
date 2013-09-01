@@ -1,0 +1,6 @@
+mkdir -p _build/lib
+ocamlbuild -use-ocamlfind -pkgs ctypes.foreign,bigarray lib/sodium.cmo
+/usr/bin/ocamlfind ocamldep -package bigarray -package ctypes.foreign -modules lib/sodium.mli > lib/sodium.mli.depends
++ /usr/bin/ocamlfind ocamldep -package bigarray -package ctypes.foreign -modules lib/sodium.mli > lib/sodium.mli.depends
+ocamlfind: Package `ctypes.foreign' not found
+Command exited with code 2.

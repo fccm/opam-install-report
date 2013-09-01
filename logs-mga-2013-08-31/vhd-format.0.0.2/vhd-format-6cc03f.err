@@ -1,0 +1,5 @@
+ocamlfind: Package `oUnit' not found
+W: Field 'pkg_ounit' is not set: Command ''/mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind' query -format %d oUnit > '/tmp/oasis-8644de.txt'' terminated with error code 2
+E: Cannot find findlib package oUnit
+E: Failure("1 configuration error")
+make: *** [setup.data] Erreur 1

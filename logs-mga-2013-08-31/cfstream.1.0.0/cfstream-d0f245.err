@@ -1,0 +1,4 @@
+ocamlfind: Package `core' not found
+*** omake: targets were not rebuilt because of errors:
+   <scanner _build/src/lib/scan-ocaml-CFStream_stream.ml>
+      depends on: _build/src/lib/CFStream_stream.ml

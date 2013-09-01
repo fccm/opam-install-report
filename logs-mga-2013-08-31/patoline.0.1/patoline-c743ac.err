@@ -1,0 +1,6 @@
+ls: impossible d'accéder à */*/*.mli: Aucun fichier ou dossier de ce type
+ls: impossible d'accéder à */*/*.mli: Aucun fichier ou dossier de ce type
+ls: impossible d'accéder à */*/*.mli: Aucun fichier ou dossier de ce type
+make[2]: *** [_build/Typography.cmx] Erreur 10
+make[1]: *** [Typography/_build/Typography.cmxa] Erreur 2
+make: *** [all] Erreur 2

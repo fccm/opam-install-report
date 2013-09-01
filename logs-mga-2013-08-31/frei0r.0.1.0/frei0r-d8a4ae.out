@@ -1,0 +1,51 @@
+configuring ocaml-frei0r 0.1.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.00.1
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... camlidl
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+checking for camlp4boot... camlp4boot
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... no
+checking for gcc option to produce PIC... -fPIC
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether pkg-config knows about frei0r... 

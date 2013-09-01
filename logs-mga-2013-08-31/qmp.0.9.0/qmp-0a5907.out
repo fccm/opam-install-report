@@ -1,0 +1,102 @@
+obuild --debug+ configure 
+  [CMD]: ocamlfind printconf conf
+Configuring qmp-0.9.0...
+  configure flag: []
+analyzing project
+  [CMD]: /usr/bin/ocamlopt.opt -config
+  [CMD]: /usr/bin/ocamlopt.opt -vnum
+initializing standard library : package dynlink
+initializing standard library : package stdlib
+initializing standard library : package nums
+initializing standard library : package bigarray
+initializing standard library : package unix
+initializing standard library : package graphics
+initializing standard library : package str
+initializing standard library : package com
+  internal depends: qmp
+  internal depends: qmp
+  getting dependencies for target lib-qmp
+  fetching META yojson
+  library yojson depends on easy-format
+  fetching META easy-format
+  library yojson depends on biniou
+  fetching META biniou
+  library biniou depends on easy-format
+  getting dependencies for target exe-cli
+  library qmp depends on yojson
+  fetching META cmdliner
+  getting dependencies for target exe-messages
+  fetching META oUnit
+  library oUnit depends on unix
+configuration changed, deleting dist
+Writing new setup
+auto-generating configuration files
+obuild --debug+ build
+  [CMD]: /usr/bin/ocamlopt.opt -config
+  [CMD]: ocamlfind printconf conf
+analyzing project
+  [CMD]: /usr/bin/ocamlopt.opt -config
+  [CMD]: /usr/bin/ocamlopt.opt -vnum
+initializing standard library : package dynlink
+initializing standard library : package stdlib
+initializing standard library : package nums
+initializing standard library : package bigarray
+initializing standard library : package unix
+initializing standard library : package graphics
+initializing standard library : package str
+initializing standard library : package com
+  internal depends: qmp
+  internal depends: qmp
+  getting dependencies for target lib-qmp
+  fetching META yojson
+  library yojson depends on easy-format
+  fetching META easy-format
+  library yojson depends on biniou
+  fetching META biniou
+  library biniou depends on easy-format
+  getting dependencies for target exe-cli
+  library qmp depends on yojson
+  fetching META cmdliner
+  getting dependencies for target exe-messages
+  fetching META oUnit
+  library oUnit depends on unix
+building target lib-qmp
+Building library qmp
+preparing compilation for lib-qmp
+Analysing Qmp
+  Qmp has mtime 1369846832.000000
+  Qmp has interface (mtime=1369846832.000000)
+  [CMD]: /usr/bin/ocamldep.opt -I lib -I dist/build/autogen -modules lib/qmp.ml
+  Qmp depends on List,Printf,Yojson
+  Qmp internally depends on 
+Analysing Qmp_protocol
+  Qmp_protocol has mtime 1369846832.000000
+  Qmp_protocol has interface (mtime=1369846832.000000)
+  [CMD]: /usr/bin/ocamldep.opt -I lib -I dist/build/autogen -modules lib/qmp_protocol.ml
+  Qmp_protocol depends on Printf,Qmp,Unix
+  Qmp_protocol internally depends on Qmp
+[1 of 4] Intfing Qmp                           
+  [CMD]: /usr/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmi -c lib/qmp.mli
+[2 of 4] Compiling Qmp                           
+  [CMD]: /usr/bin/ocamlopt.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmx -c lib/qmp.ml
+  [CMD]: /usr/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmo -c lib/qmp.ml
+[3 of 4] Intfing Qmp_protocol                  
+  [CMD]: /usr/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmi -c lib/qmp_protocol.mli
+[4 of 4] Compiling Qmp_protocol                  
+  [CMD]: /usr/bin/ocamlopt.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmx -c lib/qmp_protocol.ml
+  [CMD]: /usr/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmo -c lib/qmp_protocol.ml
+schedule finished: #processes=6 max_concurrency=2
+  compilation order: Qmp,Qmp_protocol
+  self deps: 
+package deps: [easy-format,biniou,yojson]
+Linking library dist/build/lib-qmp/qmp.cmxa
+  [CMD]: /usr/bin/ocamlopt.opt -a -o dist/build/lib-qmp/qmp.cmxa -I dist/build/lib-qmp -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson qmp.cmx qmp_protocol.cmx
+Linking library dist/build/lib-qmp/qmp.cma
+  [CMD]: /usr/bin/ocamlc.opt -a -o dist/build/lib-qmp/qmp.cma -I dist/build/lib-qmp -I /mnt/ramdisk/opam-report/.opam/system/lib/easy-format -I /mnt/ramdisk/opam-report/.opam/system/lib/biniou -I /mnt/ramdisk/opam-report/.opam/system/lib/yojson qmp.cmo qmp_protocol.cmo
+building target exe-messages
+Building executable messages
+preparing compilation for exe-messages
+Analysing Messages
+  Messages has mtime 1369846832.000000
+  [CMD]: /usr/bin/ocamldep.opt -I lib_test -I dist/build/autogen -modules lib_test/messages.ml
+Prepare.target : uncaught exception Dependencies.BuildDepAnalyzeFailed("File \"lib_test/messages.ml\", line 24, characters 47-57:\nError: Integer literal exceeds the range of representable integers of type int\n")

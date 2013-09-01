@@ -1,0 +1,1 @@
+ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure

@@ -1,0 +1,1 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' lib/libsrs_stubs.a lib/dllsrs_stubs.so lib/srs.cma lib/srs.cmxa lib/srs.a lib/srs.cmxs -tag debug' terminated with error code 10")

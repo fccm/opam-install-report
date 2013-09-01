@@ -1,0 +1,5 @@
+../Makefile.ocaml:52: .depend.ocaml: Aucun fichier ou dossier de ce type
+ct_c.c:20:22: erreur fatale: ctpublic.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+make[1]: *** [ct_c.o] Erreur 1
+make: *** [byte] Erreur 2

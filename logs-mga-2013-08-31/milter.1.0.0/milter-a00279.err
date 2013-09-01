@@ -1,0 +1,1 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' lib/libmilter_stubs.a lib/dllmilter_stubs.so lib/milter.cma lib/milter.cmxa lib/milter.a lib/milter.cmxs -tag debug' terminated with error code 10")

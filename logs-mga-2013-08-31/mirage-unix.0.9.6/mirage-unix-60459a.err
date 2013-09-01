@@ -1,0 +1,3 @@
+make[2]: *** Aucune règle pour fabriquer la cible « uninstall ». Arrêt.
+make[1]: *** [uninstall] Erreur 2
+make: *** [unix-uninstall] Erreur 2

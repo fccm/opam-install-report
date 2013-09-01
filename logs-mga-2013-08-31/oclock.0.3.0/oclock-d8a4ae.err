@@ -1,0 +1,3 @@
+oclock_stubs.c:24:27: erreur fatale: caml/mlvalues.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+make: *** [oclock_stubs.o] Erreur 1

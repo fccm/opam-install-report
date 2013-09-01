@@ -1,0 +1,1 @@
+E: Failure("Command ''/usr/bin/ocamlbuild' lib/libsvm_stubs.a lib/dllsvm_stubs.so lib/svm.cma lib/svm.cmxa lib/svm.a lib/svm.cmxs examples/xor.native examples/svm_cli.native test/svm_test.native -tag debug' terminated with error code 10")

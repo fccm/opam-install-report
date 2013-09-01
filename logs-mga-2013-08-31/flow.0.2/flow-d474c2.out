@@ -1,0 +1,11 @@
+*** omake: reading OMakefiles
+--- Checking for ocamlfind... (found /mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind)
+--- Checking for ocamlc.opt... (found /usr/bin/ocamlc.opt)
+--- Checking for ocamlopt.opt... (found /usr/bin/ocamlopt.opt)
+--- Checking whether ocamlc understands the "z" warnings... (yes)
+*** omake: finished reading OMakefiles (0.04 sec)
+--- Checking if ocamldep understands -modules... (yes)
+- build _build/test io_test.run
++ ocamlfind ocamlc -syntax camlp4o -package core,lwt,lwt.unix,lwt.ssl,lwt.preemptive,sexplib.syntax -warn-error A -thread -bin-annot -annot -absname -warn-error P -I ../lib -g flow.cma -I . -custom -o io_test.run io_test.cmo -linkpkg
+*** omake: 67/82 targets are up to date
+*** omake: failed (15.58 sec, 12/12 scans, 20/31 rules, 62/164 digests)

@@ -1,0 +1,7 @@
+ocamlbuild -classic-display -use-ocamlfind buddy.cma
+/usr/bin/ocamlfind ocamlopt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/bin/ocamlfind ocamlc -cc gcc -ccopt -fPIC -c libbuddy_stubs.c
++ /usr/bin/ocamlfind ocamlc -cc gcc -ccopt -fPIC -c libbuddy_stubs.c
+libbuddy_stubs.c:22:17: erreur fatale: bdd.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+Command exited with code 2.

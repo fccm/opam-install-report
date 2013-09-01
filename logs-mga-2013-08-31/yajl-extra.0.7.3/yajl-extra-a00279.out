@@ -1,0 +1,12 @@
+cd twt && make
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/yajl-extra.0.7.3/twt »
+ocamlc -o ocaml+twt str.cma unix.cma ocaml+twt.ml
+ocamlc -o ppcompose -pp ./ocaml+twt ppcompose.ml
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/yajl-extra.0.7.3/twt »
+ocamlfind query yajl || make install
+/mnt/ramdisk/opam-report/.opam/system/lib/yajl
+cd extra && PATH=/mnt/ramdisk/opam-report/.opam/system/build/yajl-extra.0.7.3/twt:/mnt/ramdisk/opam-report/.opam/system/bin:/usr/share/colorgcc:/usr/bin:/bin:/usr/local/bin:/usr/X11R6/bin/:/usr/games:/usr/lib/qt4/bin:/home/blue_prawn/bin:/home/blue_prawn/home/bin ocamlbuild -use-ocamlfind JSON.cmxa JSON.cma
+/usr/bin/ocamlfind ocamldep -pp ocaml+twt -package batteries -package yajl -modules JSON.ml > JSON.ml.depends
++ /usr/bin/ocamlfind ocamldep -pp ocaml+twt -package batteries -package yajl -modules JSON.ml > JSON.ml.depends
+ocamlfind: Package `yajl' not found
+Command exited with code 2.

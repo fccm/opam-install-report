@@ -1,0 +1,18 @@
+make -C src all
+make[1] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src »
+make -C Rbuffer rbuffer.cmxa
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src/Rbuffer »
+ocamlc -o rbuffer.cmi rbuffer.mli
+ocamlc -o rope.cmi rope.mli
+ocamlopt -a -o rbuffer.cmxa rbuffer.ml
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src/Rbuffer »
+make -C Typography _build/Typography.cmxa
+make[2] : on entre dans le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src/Typography »
+ocamlbuild -use-ocamlfind -classic-display Typography.cmx
+/usr/bin/ocamlfind ocamlopt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/bin/ocamlfind ocamldep -pp 'cpp -C -ffreestanding -w -DINT32 -DCAMLZIP -DCAMLIMAGES -DLANG_FR' -package camomile -package zip -package camlimages.all_formats -modules Config.ml > Config.ml.depends
++ /usr/bin/ocamlfind ocamldep -pp 'cpp -C -ffreestanding -w -DINT32 -DCAMLZIP -DCAMLIMAGES -DLANG_FR' -package camomile -package zip -package camlimages.all_formats -modules Config.ml > Config.ml.depends
+ocamlfind: Package `camlimages.all_formats' not found
+Command exited with code 2.
+make[2] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src/Typography »
+make[1] : on quitte le répertoire « /mnt/ramdisk/opam-report/.opam/system/build/patoline.0.1/src »

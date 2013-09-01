@@ -1,0 +1,5 @@
+sh: protoc : commande introuvable
+command execution failed: protoc -I./pb/ --include_imports --descriptor_set_out=./pb/riak.proto.pb ./pb/riak.proto
+make[1]: *** [piqi] Erreur 1
+E: Failure("Command 'make -f Makefile.piqi' terminated with error code 2")
+make: *** [build] Erreur 1

@@ -1,0 +1,12 @@
+Could NOT find SFML (missing:  SFML_SYSTEM_LIBRARY SFML_WINDOW_LIBRARY SFML_GRAPHICS_LIBRARY SFML_AUDIO_LIBRARY SFML_NETWORK_LIBRARY)
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+SFML_INCLUDE_DIR
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/OcsfmlSystem
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/OcsfmlWindow
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/OcsfmlGraphics
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/OcsfmlAudio
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/OcsfmlNetwork
+   used as include directory in directory /mnt/ramdisk/opam-report/.opam/system/build/ocsfml.2.0/Test
+

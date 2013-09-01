@@ -1,0 +1,1 @@
+/usr/bin/mpicc.openmpi -I`ocamlc -where` -I/usr/lib/openmpi/include -O2 -g -Wall   -c -o init.o init.c

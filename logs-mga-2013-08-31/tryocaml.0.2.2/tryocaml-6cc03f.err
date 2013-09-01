@@ -1,0 +1,29 @@
+CSS.cmi : 5545 -> 4382 (-20%)
+event_arrows.cmi : 57698 -> 33433 (-42%)
+js.cmi : 68839 -> 25257 (-63%)
+typed_array.cmi : 9854 -> 5394 (-45%)
+dom.cmi : 94716 -> 23872 (-74%)
+file.cmi : 27688 -> 11681 (-57%)
+json.cmi : 374 -> 314 (-16%)
+url.cmi : 2104 -> 1376 (-34%)
+dom_events.cmi : 5010 -> 3131 (-37%)
+firebug.cmi : 24139 -> 17566 (-27%)
+lwt_js.cmi : 388 -> 338 (-12%)
+webGL.cmi : 174525 -> 53616 (-69%)
+dom_html.cmi : 2284403 -> 631527 (-72%)
+form.cmi : 2845 -> 1658 (-41%)
+regexp.cmi : 1437 -> 924 (-35%)
+xmlHttpRequest.cmi : 13021 -> 5708 (-56%)
+findlib: [WARNING] Interface graphics.cmi occurs in several directories: ., /usr/lib/ocaml
+File "utils.ml", line 32, characters 34-110:
+Warning 16: this optional argument cannot be erased.
+findlib: [WARNING] Interface graphics.cmi occurs in several directories: ., /usr/lib/ocaml
+findlib: [WARNING] Interface graphics.cmi occurs in several directories: ., /usr/lib/ocaml
+findlib: [WARNING] Interface graphics.cmi occurs in several directories: ., /usr/lib/ocaml
+findlib: [WARNING] Interface graphics.cmi occurs in several directories: ., /usr/lib/ocaml
+File "graphics.ml", line 276, characters 2-22:
+Warning 21: this statement never returns (or has an unsound type.)
+File "nat.ml", line 87, characters 13-23:
+Error: Integer literal exceeds the range of representable integers of type int
+make[1]: *** [ocaml-num.cma] Erreur 2
+make: *** [all] Erreur 2

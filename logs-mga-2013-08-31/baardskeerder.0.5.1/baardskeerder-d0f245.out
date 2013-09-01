@@ -1,0 +1,6 @@
+ocamlbuild -use-ocamlfind bsmgr.byte bsmgr.native baardskeerder.cma baardskeerder.cmxa baardskeerder.a bs_internal.cma bs_internal.cmxa
+/usr/bin/ocamlfind ocamlopt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/bin/ocamlfind ocamldep -package unix -package oUnit -package quickcheck -package lwt.preemptive -package lwt.unix -package lwt -modules bsmgr.ml > bsmgr.ml.depends
++ /usr/bin/ocamlfind ocamldep -package unix -package oUnit -package quickcheck -package lwt.preemptive -package lwt.unix -package lwt -modules bsmgr.ml > bsmgr.ml.depends
+ocamlfind: Package `quickcheck' not found
+Command exited with code 2.

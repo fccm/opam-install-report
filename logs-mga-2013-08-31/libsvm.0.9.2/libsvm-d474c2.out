@@ -1,0 +1,6 @@
+/usr/bin/ocamlopt.opt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -c lib/libsvm_stubs.c
++ ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -c lib/libsvm_stubs.c
+lib/libsvm_stubs.c:37:24: erreur fatale: libsvm/svm.h : Aucun fichier ou dossier de ce type
+compilation terminée.
+Command exited with code 2.

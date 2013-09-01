@@ -1,0 +1,1 @@
+configure: error: gstreamer-1.0.pc not found.. Do you need to set PKG_CONFIG_PATH?

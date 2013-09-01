@@ -1,0 +1,6 @@
+Package gammu was not found in the pkg-config search path.
+Perhaps you should add the directory containing `gammu.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'gammu' found
+Exception: End_of_file.
+E: Failure("Command 'ocaml config.ml' terminated with error code 2")

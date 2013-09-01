@@ -1,0 +1,6 @@
+ocamlbuild -use-ocamlfind all.otarget
+/usr/bin/ocamlfind ocamlopt -I /usr/lib/ocaml/ocamlbuild unix.cmxa /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/bin/ocamlfind ocamldep -package zip -package sonet.httplib -package sonet.jsonlib -modules lib/cfg.mli > lib/cfg.mli.depends
++ /usr/bin/ocamlfind ocamldep -package zip -package sonet.httplib -package sonet.jsonlib -modules lib/cfg.mli > lib/cfg.mli.depends
+ocamlfind: Package `sonet.httplib' not found
+Command exited with code 2.

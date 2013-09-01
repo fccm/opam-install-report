@@ -1,0 +1,4 @@
+ocamlfind: Package `textutils' not found
+W: Field 'pkg_textutils' is not set: Command ''/mnt/ramdisk/opam-report/.opam/system/bin/ocamlfind' query -format %d textutils > '/tmp/oasis-f2cc06.txt'' terminated with error code 2
+E: Cannot find findlib package textutils
+E: Failure("1 configuration error")

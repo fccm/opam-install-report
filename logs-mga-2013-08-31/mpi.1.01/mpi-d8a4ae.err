@@ -1,0 +1,2 @@
+/bin/sh: /usr/bin/mpicc.openmpi: Aucun fichier ou dossier de ce type
+make: *** [init.o] Erreur 127

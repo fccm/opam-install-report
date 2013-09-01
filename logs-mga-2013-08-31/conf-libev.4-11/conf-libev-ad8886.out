@@ -1,0 +1,11 @@
+testing for libev: ............................. unavailable
+
+      The following recquired C libraries are missing: libev.
+Please install them and retry. If they are installed in a non-standard location, set the environment variables C_INCLUDE_PATH and LIBRARY_PATH accordingly and retry.
+
+For example, if they are installed in /opt/local, you can type:
+
+export C_INCLUDE_PATH=/opt/local/include
+export LIBRARY_PATH=/opt/local/lib
+
+To compile without libev support, use ./configure --disable-libev ...

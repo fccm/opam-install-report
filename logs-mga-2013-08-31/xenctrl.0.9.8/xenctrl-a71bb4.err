@@ -1,0 +1,3 @@
+Makefile:6: config.mk: Aucun fichier ou dossier de ce type
+ocamlfind: Package `cmdliner' not found
+make: *** [configure] Erreur 2

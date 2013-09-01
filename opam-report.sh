@@ -11,6 +11,9 @@ export OPAMROOT="$BASEDIR/.opam"
 LOGDIR="$BASEDIR/logs-$OS-`date --iso`"
 mkdir -p $LOGDIR
 
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8:en"
+
 rm -rf $OPAMROOT
 echo n | opam init
 eval `opam config env`

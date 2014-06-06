@@ -18,7 +18,7 @@ rm -rf $OPAMROOT
 echo n | opam init
 eval `opam config env`
 
-PKG_LIST=`opam list --short`
+PKG_LIST=`opam list -a --short`
 for PKG in $PKG_LIST
 do
   rm -rf $OPAMROOT
